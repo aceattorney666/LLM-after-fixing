@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Animal Adoption Center</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* CSS styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url('https://via.placeholder.com/1920x1080');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		header {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		nav ul li {
+			margin-right: 20px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: #333;
+			padding: 10px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+		nav ul li a:hover {
+			background-color: #ddd;
+		}
+
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 40px;
+			background-color: rgba(255, 255, 255, 0.8);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.animal-card {
+			display: flex;
+			align-items: center;
+			margin-bottom: 40px;
+		}
+
+		.animal-card img {
+			max-width: 300px;
+			margin-right: 20px;
+			border-radius: 5px;
+		}
+
+		.animal-card h2 {
+			margin-top: 0;
+		}
+
+		.animal-card p {
+			margin-bottom: 0;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+		}
+
+		form h2 {
+			margin-top: 0;
+		}
+
+		form input[type="text"],
+		form input[type="email"],
+		form textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+
+		form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		form input[type="submit"]:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Animals Available</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<a href="#"><img src="https://via.placeholder.com/100x50" alt="Logo"></a>
+	</header>
+
+	<main>
+		<h1>Welcome to Our Animal Adoption Center</h1>
+		<p>Find your furry friend today!</p>
+
+		<h2>Animals Available for Adoption</h2>
+		<div class="animal-card">
+			<img src="https://via.placeholder.com/300x200" alt="Dog">
+			<div>
+				<h2>Buddy</h2>
+				<p>Breed: Labrador Retriever</p>
+				<p>Age: 2 years</p>
+				<p>Buddy is a friendly and energetic dog who loves to play and go for long walks.</p>
+			</div>
+		</div>
+
+		<div class="animal-card">
+			<img src="https://via.placeholder.com/300x200" alt="Cat">
+			<div>
+				<h2>Whiskers</h2>
+				<p>Breed: Domestic Shorthair</p>
+				<p>Age: 3 years</p>
+				<p>Whiskers is a curious and affectionate cat who loves to cuddle and play with toys.</p>
+			</div>
+		</div>
+
+		<h2>Adoption Form</h2>
+		<form>
+			<h2>Apply to Adopt</h2>
+			<label for="name">Name:</label>
+			<input type="text" id="name" placeholder="Enter your name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" placeholder="Enter your email" required>
+			<label for="message">Message:</label>
+			<textarea id="message" placeholder="Tell us about yourself and the animal you're interested in adopting." required></textarea>
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Animal Adoption Center. All rights reserved.</p>
+	</footer>
+
+	<script>
+		// JavaScript code
+		// You can add interactivity here, such as form validation or image sliders
+	</script>
+</body>
+</html>
