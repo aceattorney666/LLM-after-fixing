@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Adoption Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #008000; /* Dark green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .animal-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .animal-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-text {
+            margin: 20px;
+            padding: 20px;
+        }
+        form {
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Animal Adoption Center</h1>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Animals Available</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    <div class="animal-container">
+        <div class="animal-card">
+            <img src="placeholder_dog.jpg" alt="Dog">
+            <h2>Dog</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Contact Us</button>
+        </div>
+        <div class="animal-card">
+            <img src="placeholder_cat.jpg" alt="Cat">
+            <h2>Cat</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Contact Us</button>
+        </div>
+        <div class="animal-card">
+            <img src="placeholder_bunny.jpg" alt="Bunny">
+            <h2>Bunny</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Contact Us</button>
+        </div>
+    </div>
+    <div class="form-text">
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        &copy; 2024 Animal Adoption Center
+    </div>
+</body>
+</html>
