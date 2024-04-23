@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoptr</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #333; /* Use a darker color for better contrast */
+            color: #fff; /* Ensure white text for good contrast */
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Ensure white text for good contrast */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: url('hero-bg.jpg'); /* Ensure background image has high contrast */
+            background-size: cover;
+            color: #fff; /* Ensure white text for good contrast */
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50; /* Use a contrasting color for button */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .animals {
+            padding: 50px;
+        }
+
+        .animal {
+            margin-bottom: 50px;
+        }
+
+        .animal img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333; /* Use a darker color for better contrast */
+            color: #fff; /* Ensure white text for good contrast */
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Adoptr</div>
+            <ul class="nav-links">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> Find a Friend</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1> Find Your New Best Friend </h1>
+        <p>We connect you with lovable animals looking for forever homes.</p>
+        <a href="#" class="btn">Start Your Journey </a>
+    </div>
+    <section class="animals">
+        <h2> Featured Friends</h2>
+        <div class="animal">
+            <img src="dog.jpg" alt="Dog">
+            <h3> Dogs</h3>
+            <p>Meet our adorable dogs available for adoption. They are friendly, playful, and looking for a loving home.</p>
+            <a href="#" class="btn">Meet the Pups </a>
+        </div>
+        <div class="animal">
+            <img src="cat.jpg" alt="Cat">
+            <h3> Cats</h3>
+            <p>Check out our lovely cats waiting for someone to cuddle with. They are sweet, independent, and ready for a forever family.</p>
+            <a href="#" class="btn">Meet the Kitties </a>
+        </div>
+        </section>
+    <footer>
+        <p>&copy; 2024 Adoptr. All rights reserved.</p>
+    
