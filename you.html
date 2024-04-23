@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Adoption Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS styles go here */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a:not(:first-child) {display: none;}
+            nav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            nav.responsive {position: relative;}
+            nav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            nav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .animal-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .animal-card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .animal-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .animal-card h3 {
+            color: #333;
+        }
+
+        .animal-card p {
+            color: #777;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        form h3 {
+            color: #333;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            resize: vertical;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="active"><span class="fas fa-home"></span> Home</a>
+        <a href="#"><span class="fas fa-paw"></span> Animals Available</a>
+        <a href="#"><span class="fas fa-comments"></span> Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()"><span class="fas fa-bars"></span></a>
+    </nav>
+
+    <div class="animal-container">
+        <div class="animal-card">
+            <img src="animal1.jpg" alt="Animal 1">
+            <h3>Animal 1</h3>
+            <p>Description of Animal 1.</p>
+        </div>
+        <div class="animal-card">
+            <img src="animal2.jpg" alt="Animal 2">
+            <h3>Animal 2</h3>
+            <p>Description of Animal 2.</p>
+        </div>
+        <!-- Add more animal cards as needed -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Animal Adoption Center. All rights reserved.</p>
+    </footer>
+
+    <div id="contact-form" style="display: none;">
+        <form>
+            <h3>Contact Us</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Your email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <script>
+        // JavaScript code can be added here
+        function toggleNav() {
+            var nav = document.getElementsByTagName("nav")[0];
+            nav.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>
