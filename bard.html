@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Tails Adoption Center</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="images/logo.svg" alt="Happy Tails Adoption Center">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#animals-available">Animals Available</a></li>
+        <li><a href="#success-stories">Success Stories</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <label for="search-icon"><i class="fas fa-search"></i> Search</label>
+      <label for="favorites-icon"><i class="fas fa-heart"></i> Favorites</label>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/park-with-animals.jpg" alt="Animals playing in a park">
+      <h1>Open Your Heart, Open Your Home</h1>
+      <p>Give a deserving animal a second chance at love. Browse our adoptable pets and find your perfect furry friend!</p>
+      <button>Learn More About Adoption</button>
+    </section>
+
+    <section class="animals" id="animals-available">
+      <h2>Looking for a Loving Companion?</h2>
+      <p>These wonderful animals are waiting to find their forever homes. Consider opening your heart and fostering one of them!</p>
+      <div class="animal-filter">
+        <label for="animal-type">Filter by Animal:</label>
+        <select id="animal-type">
+          <option value="all">All Animals</option>
+          <option value="dog">Dogs</option>
+          <option value="cat">Cats</option>
+          <option value="rabbit">Rabbits</option>
+          <option value="other">Other (Small Animals)</option>
+        </select>
+      </div>
+
+      <div class="animal-grid">
+        <div class="animal-card">
+          <img src="images/placeholder-dog.jpg" alt="Dog">
+          <h3>Max - Playful Pup</h3>
+          <span class="animal-type"><i class="fas fa-paw"></i> Dog</span> | 2 Years Old
+          <p>Max is a friendly and energetic Labrador Retriever mix. He loves walks, playing fetch, and cuddling on the couch. He would do best in an active home with a fenced yard. <a href="#">Learn More</a></p>
+          <button>Interested in Fostering Max?</button>
+        </div>
+
+        <div class="animal-card">
+          <img src="images/placeholder-cat.jpg" alt="Cat">
+          <h3>Luna - Gentle Kitty</h3>
+          <span class="animal-type"><i class="fas fa-paw"></i> Cat</span> | 5 Years Old
+          <p>Luna is a sweet and independent Siamese cat. She enjoys napping in sunny spots and chasing laser pointers. Luna would be a perfect fit for a calm and quiet home. <a href="#">Learn More</a></p>
+          <button>Interested in Fostering Luna?</button>
+        </div>
+
+        <div class="animal-card">
+          <img src="images/placeholder-rabbit.jpg" alt="Rabbit">
+          <h3>Snowball - Curious Bunny</h3>
+          <span class="animal-type"><i class="fas fa-paw"></i> Rabbit</span> | 1 Year Old
+          <p>Snowball is a curious and cuddly Holland Lop rabbit. He loves exploring his surroundings and munching on hay. Snowball would do well in a home with plenty of space to hop around. <a href="#">Learn More</a
